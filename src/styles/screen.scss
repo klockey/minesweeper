@@ -1,6 +1,6 @@
 @import 'utility';
 
-$base-text-size: 16px;
+$base-text-size: 25px; //16px;
 $base-font-family: sans-serif;
 
 html {
@@ -10,4 +10,46 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  background-color: blue;
 }
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 720px;
+  height: 100%;
+  margin: 20px 0;
+}
+
+button {
+  flex: 1;
+  position: relative;
+  justify-content: center;
+  top: 45%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+// table {
+//   flex: 1;
+//   border: 1px solid black;
+//   position: relative;
+//   top: 60%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background-color: white;
+//   width: 400px;
+//   height: 600px;
+// }
+
+// .StartGame {
+//   flex: 1;
+//   position: relative;
+//   top: 0%;
+//   left: 47%;
+//   margin: 0;
+// }

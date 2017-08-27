@@ -1,25 +1,15 @@
 import React, { Component } from 'react'
+// import Home from './Home'
 import store from './store'
+// import StartGame from './StartGame'
+import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom'
+import MakeTable from './MakeTable'
 
 class GameBoard extends Component {
-  makeTableHTML = (myArray) => {
-    console.log('makeTableHTML')
-    var result = '<table>'
-    for (var i = 0; i < myArray.length; i++) {
-      result += '<tr>'
-      for (var j = 0; j < myArray[i].length; j++) {
-        result += '<td>' + myArray[i][j] + '</td>'
-      }
-      result += '</tr>'
-    }
-    result += '</table>'
-
-    return result
-  }
-
   render () {
+    console.log('1 2' + store.status)
     return <div>
-      <div> { this.makeTableHTML(this.props.board) } </div>
+      <MakeTable board={store.board} status={store.status} />
     </div>
   }
 }

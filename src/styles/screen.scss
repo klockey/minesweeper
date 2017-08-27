@@ -19,7 +19,7 @@ body {
   -webkit-flex-direction: column;
   flex-direction: column;
   justify-content: center;
-  position: absolute;
+  position: relative;
   width: 720px;
   height: 100%;
   margin: 20px 0;
@@ -34,17 +34,28 @@ button {
   transform: translate(-50%, -50%);
 }
 
-// table {
-//   flex: 1;
-//   border: 1px solid black;
-//   position: relative;
-//   top: 60%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   background-color: white;
-//   width: 400px;
-//   height: 600px;
-// }
+table {
+  flex: 1;
+  border: 1px solid black;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 400px;
+  height: 600px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+table {
+  width: 200px;
+  height: 200px;
+  border-color: black;
+}
 
 // .StartGame {
 //   flex: 1;

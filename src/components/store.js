@@ -7,10 +7,11 @@ class Store {
 @observable view = ''
 @observable id: ''
 @observable board: ''
-@observable state: 'start'
+@observable status: 'start'
 @observable mines: ''
 @observable gameOver: false
 @observable startBoard: ''
+@observable result: ''
 }
 
 const store = new Store()
